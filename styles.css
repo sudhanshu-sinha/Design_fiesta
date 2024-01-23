@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    background-color: #2E1B50;
+}
+
+.navbar {
+    display: flex;
+    padding-left: 7%;
+    padding-top: 2%;
+    padding-right: 5%;
+    justify-content: space-between;
+    color: white;
+    font-size: 30px;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    margin: 7% 10% 1% 10%;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+
+    /* Add blurred background */
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit; /* Inherit background from the main element */
+    filter: blur(10px); /* Adjust the blur radius as needed */
+    z-index: -1;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.heading text:nth-child(1) {
+    font-size: 70px;
+}
+
+.hero1 {
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading span {
+    font-size: 140px;
+    font-weight: 1000;
+}
+.heading p {
+    font-size: 22px;
+}
+
+.image img {
+    width: 650px; /* Adjust the width as needed */
+}
+
+.button {
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    background-color: #955AFF;
+    width: 250px;
+}
+
+.other {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.other span {
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.products {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.pro img {
+    padding: 10px;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: #271742;
+    width:100%
+}
+
+.proo {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 100px;
+}
